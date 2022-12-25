@@ -6,7 +6,7 @@ let accountState;
 // accountId="431"; // can't change value.
 
 accountEmail="xyz@google.com";
-accountPassword="45678"
+accountPassword="45678";
 accountCity="Giridih";
 
 console.log(accountId);
