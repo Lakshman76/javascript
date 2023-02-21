@@ -30,4 +30,4 @@ console.log(typeof (myObj)); // it returns object
 const myFunction = function(){
     console.log("Hello world");
 }
-console.log(typeof(myFunction));// it returns object
+console.log(typeof(myFunction));// it returns function
