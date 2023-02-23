@@ -81,9 +81,9 @@ console.log(removed); // [ 3, 4, 5 ]
 let device = ["mobile" , "Laptop" , "desktop" ,"tab"];
 console.log(device);
 device.reverse();
-console.log(device);
+console.log(device); // [ 'tab', 'desktop', 'Laptop', 'mobile' ]
 
 // 10. indexof():- it is used to find the index of specified element.
 
 let index = device.indexOf("mobile");
-console.log(index);
+console.log(index); // 3
