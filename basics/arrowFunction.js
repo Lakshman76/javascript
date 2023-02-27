@@ -10,11 +10,13 @@ console.log(add(7,9));  // 16
 
 // 3. Multiple parameter and more than one statement.
 let addThree = (x,y,z) => {
-    console.log(`Addition of' ${x} , ${y} and ${z} :`);
+    console.log(`Addition of ${x} , ${y} and ${z} :`);
     return x+y+z;
 }
-console.log(addThree(5,7,9));
+console.log(addThree(5,7,9)); // 21
 
 // returning object
-let sumAndDifference = (x,y)=> ({sum : x+y , difference : x-y});
-console.log(sumAndDifference(13,5));
+function sumAndDifference(x, y) {
+    return ({ sum: x + y, difference: x - y });
+}
+console.log(sumAndDifference(13,5));  // { sum: 18, difference: 8 }

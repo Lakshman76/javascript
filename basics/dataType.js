@@ -38,8 +38,8 @@ let myObj = {
     branch: "cs"
 }
 console.log(typeof (myObj)); // object
-console.log(myObj);
-console.log(myObj.name);
+console.log(myObj);  // { name: 'Lakshman', age: 18, branch: 'cs' }
+console.log(myObj.name);  // Lakshman
 
 // Function
 const myFunction = function(){

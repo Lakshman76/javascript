@@ -37,7 +37,7 @@ function default_para(str="Lakshman") {
 default_para(); // Lakshman
 default_para("Prakash"); // prakash
 
-//  If we take two parameters and first perameter already assigned to default value, if we call function by passing 
+//  If we take two parameters and first perameter already assigned to default value then if we call function by passing 
 //  only one argument then it is also assigned to first parameter and second parameter become undefined.
 function multiply(x=5,y) {
     return x*y;
