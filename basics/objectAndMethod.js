@@ -99,6 +99,7 @@ let obj_seal={
 };
 console.log(obj_seal);  // { id: 102, name: 'Laksh' }
 Object.seal(obj_seal);
+console.log(Object.isSealed(obj_seal));  // true
 obj_seal.id=105;
 obj_seal.name='Shiva';
 console.log(obj_seal);  // { id: 105, name: 'Shiva' }
