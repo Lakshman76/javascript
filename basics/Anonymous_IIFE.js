@@ -15,10 +15,10 @@ Anonymous();
 
 // or using arrow function
 ((x) => {
-    console.log(x ** 2);
+    console.log(x ** 2);  // 16
+    console.log(x ** 3);  // 64
 })(4);
 
 (function(){
     console.log("Hello, World!"); // Hello, World!
 })();
-
