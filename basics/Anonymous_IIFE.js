@@ -22,3 +22,7 @@ Anonymous();
 (function(){
     console.log("Hello, World!"); // Hello, World!
 })();
+// or
+// (() => {
+//     console.log("Hello, World!"); // Hello, World!
+// })();
