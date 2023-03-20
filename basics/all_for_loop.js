@@ -22,3 +22,5 @@ for (const key in myFrineds) {
     console.log(key);  // it gives index of all elements.
     console.log(myFrineds[key]);  // prakash    Abhisek    Anmol   Nitin   Vishal  (all are in new line)
 }
+
+// FOR OF LOOP
