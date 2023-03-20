@@ -7,7 +7,8 @@ for (let i = 0; i < myFrineds.length; i++) {
     console.log(myFrineds[i]);    
 }
 
-// FOR IN LOOP
+/***************************FOR IN LOOP*************************** */ 
+
 const myDetail={
     name:'Lakshman',
     age: 18,
@@ -18,9 +19,34 @@ for (const key in myDetail) {
     console.log(myDetail[key]); // Lakshman     18      BCA
 }
 // Acces array named myFriens using for in loop.
-for (const key in myFrineds) {
-    console.log(key);  // it gives index of all elements.
-    console.log(myFrineds[key]);  // prakash    Abhisek    Anmol   Nitin   Vishal  (all are in new line)
+for (const index in myFrineds) {
+    console.log(index);  // it gives index of all elements.
+    console.log(myFrineds[index]);  // prakash    Abhisek    Anmol   Nitin   Vishal  (all are in new line)
 }
 
-// FOR OF LOOP
+/***************************FOR OF LOOP*************************** */ 
+
+let superHero = ['iron-man','ant-man','Hulk','vision','thor'];
+for (const elements of superHero) {
+    console.log(elements); // iron-man    ant-man    Hulk    vision    thor(all are in a new line)
+}
+/* const myDetail2={
+    name:'Lakshman',
+    age: 18,
+    course : 'BCA'
+}
+for (const iterator of myDetail2) {
+    console.log(iterator); // Error: myDetail2 is not iterable
+} */
+
+/***************************FOREACH METHOD*************************** */ 
+let nums=[1,2,3,4,5];
+
+nums.forEach(num => console.log(num)); // 1     2      3       4       5
+
+nums.forEach((num,index,arr) => console.log(`index is : ${index} and value is : ${num} of array(nums) : ${arr}`) );
+
+const heros = ["naagraj", "doga", "dhruva", "maniraj"]
+
+heros.forEach(function(el) { console.log(el.toUpperCase())});
+// NAAGRAJ      DOGA        DHRUVA      MANIRAJ
