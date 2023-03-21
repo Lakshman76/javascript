@@ -46,7 +46,7 @@ nums.forEach(num => console.log(num)); // 1     2      3       4       5
 
 nums.forEach((num,index,arr) => console.log(`index is : ${index} and value is : ${num} of array(nums) : ${arr}`) );
 
-const heros = ["naagraj", "doga", "dhruva", "maniraj"]
+const heros = ["naagraj", "doga", "dhruva", "maniraj"];
 
 heros.forEach(function(el) { console.log(el.toUpperCase())});
 // NAAGRAJ      DOGA        DHRUVA      MANIRAJ
