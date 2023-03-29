@@ -90,3 +90,16 @@ console.log(device); // [ 'tab', 'desktop', 'Laptop', 'mobile' ]
 
 let index = device.indexOf("mobile");
 console.log(index); // 3
+
+/*************************** split method() *****************************/
+
+let myDetail = 'My name is Lakshman kumar , roll 62, age 20';
+let arr = myDetail.split(' '); // here should be single space in parenthesis.
+console.log(arr); // [ 'My',  'name', 'is', 'Lakshman', 'kumar' , ',' , 'roll', '62,' , 'age',   '20'   ]
+
+let myName = 'Lakshman';
+let anotherArr = myName.split('');
+console.log(anotherArr); // [ 'L', 'a', 'k', 's', 'h', 'm', 'a', 'n' ]
+
+let oneMoreArr = myDetail.split(); // it work when no space and more than one space in parenthesis.
+console.log(oneMoreArr); // [ 'My name is Lakshman kumar , roll 62, age 20' ]
