@@ -32,7 +32,27 @@ console.log([...myName]); // [ 'l', 'a', 'k', 's', 'h', 'm', 'a', 'n',' ', 'k', 
 // Spread Operator Works as a Function Call 
 
 const num = [1, 2, 3, 4];
+
 function addNumbers(a, b, c, d) {
   return a + b + c + d;
 }
 console.log(addNumbers(...num)); // 10  it always return 10 as we increase the value of num.
+
+/******************************** REST parameter ***************************/
+
+function sum (...num){
+  let total = 0;
+  for (const value of num) {
+    total += value;
+  }
+  return total;
+}
+console.log(sum(2,4,6));  // 12
+console.log(sum(1,2,3,4,5,6)); // 21
+
+
+function multiply(multiplier, ...theArgs) {
+  return theArgs.map((element) => multiplier * element);
+}
+const arr = multiply(2, 15, 25, 42);
+console.log(arr); // [30, 50, 84]
