@@ -103,3 +103,13 @@ console.log(anotherArr); // [ 'L', 'a', 'k', 's', 'h', 'm', 'a', 'n' ]
 
 let oneMoreArr = myDetail.split(); // it work when no space and more than one space in parenthesis.
 console.log(oneMoreArr); // [ 'My name is Lakshman kumar , roll 62, age 20' ]
+
+/****************************** Array.from() method *********************** */
+
+function multiByTwo(){
+     let args = Array.from(arguments);
+     let arr  = args.map((item)=> item*2)
+     console.log(arr);
+}
+multiByTwo(1,3,5); // [ 2, 6, 10 ]
+multiByTwo(7,8,9); // [ 14, 16, 18 ]
