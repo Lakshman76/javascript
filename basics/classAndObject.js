@@ -7,7 +7,7 @@ class product{
         this.name = n;  // this keyword refers to the same object we created.
     }
     display(){ // it ia a function or method that shows the behavior of class
-        console.log("Displaying a product");
+        console.log("Displaying a product", this.name); // 
     }
 }
 
@@ -15,6 +15,8 @@ const p1 = new product();  // new keyword is used to create a empty plane object
 // console.log(p);  // product {}
 
 console.log(p1); // product { name: undefined }
+p1.display();  // Displaying a product undefined
 
-const p2 = new product("Lakshman");
-console.log(p2); //product { name: 'Lakshman' }
+const p2 = new product("Motorola");
+console.log(p2); //product { name: 'Motorola' }
+p2.display();  // Displaying a product Motorola
