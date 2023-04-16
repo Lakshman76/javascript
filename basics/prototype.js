@@ -60,8 +60,9 @@ const student2 = {
 }
 
 // New version of prototype
-Object.setPrototypeOf(student2 ,student);
+Object.setPrototypeOf(student2 ,student); // student2 inherit property of student and teacher because student already inherit property of teacher.
 console.log(student2.course);  // BCA
+console.log(student2.makeVideo);  // true 
 
 /******************* some interesting ***************/
 
