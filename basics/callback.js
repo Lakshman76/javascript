@@ -27,7 +27,7 @@ console.log("End");
 /* output of above code -
     Start
     End
-    i'm executed after 3 sec
+    i'm executed after 1 sec
  */
 
 /**********************Nesting callback or callback hell ***************/
@@ -50,4 +50,4 @@ console.log("End");
  */
 /* This situation is called callback hell where the code is messed up due to multiple nested callback functions. This decreases the readability of the code and makes it difficult to edit.
 
-So to avoid this issue we use different techniques like promises, async, and await(syntax coating). */
+So to avoid this issue we use different techniques like promises, async, and await. */
