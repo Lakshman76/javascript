@@ -22,7 +22,7 @@ console.log(only_return()); // "I'm Lakshman kumar a full stack web developer
 
 // return have no value
 function empty_return(name) {
-    if(name == undefined){
+    if(name === undefined){
         return;
     }
     console.log(name);
@@ -37,8 +37,8 @@ function default_para(str="Lakshman") {
 default_para(); // Lakshman
 default_para("Prakash"); // prakash
 
-//  If we take two parameters and first perameter already assigned to default value then if we call function by passing 
-//  only one argument then it is also assigned to first parameter and second parameter become undefined.
+//  If we take two parameters and first perameter already assigned to default value then if we call function by passing only one argument then it is also assigned to first parameter and second parameter become undefined.
+// e.g- 
 function multiply(x=5,y) {
     return x*y;
 }
