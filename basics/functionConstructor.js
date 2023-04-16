@@ -11,7 +11,7 @@ const p = new product("iphone 14", "100000");
 console.log(p);  // { x: 10, y: 20 }
 
 /**************NOTE***************/
-/** 1-> this in js is different from other language.
+/** 1-> this keyword in js is different from other language.
 2-> this keyword refers to the context from where we call the function.
 3-> this keyword in class is approx same in function.
 */
