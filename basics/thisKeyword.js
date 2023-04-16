@@ -25,17 +25,17 @@ class person{
         //this.course = course;
         console.log(`my name is ${name} and age ${age} and course is ${course}`);
     }
-    getDetail(n,age){
+    setDetail(n,age){
         this.name = n;
         this.age = age;
     }
-    // in this static method we cannot get error but from this method we cannot access name and age of person.
+    // in this static method, we cannot get error but from this method we cannot access name and age of person.
     static printDetail(){
         console.log(`Name is : ${this.name} and age is : ${this.age}`);
     }
 }
 person.detail("laksh",18,'BCA');  // my name is laksh and age 18 and course is BCA
 
-let p = new person("Lakshman", 19);
-p.getDetail();
-person.printDetail();
+let p = new person();
+p.setDetail("Lakshman", 19);
+person.printDetail(); // Name is : person and age is : undefined
