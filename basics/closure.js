@@ -20,3 +20,4 @@ function outer(){
 outer();
 //inner();  --> error
 // console.log(outerValue);  --> eeror
+console.log(outer.outerValue);  // undefined
