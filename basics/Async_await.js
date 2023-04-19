@@ -9,6 +9,7 @@ Select container           2
 Select toppings            3
 Serve Ice cream            2
 
+reference by freecodecamp
 */
 let stocks = {
     Fruits : ["strawberry", "grapes", "banana", "apple"],
