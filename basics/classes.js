@@ -37,6 +37,6 @@ console.log(detail2);  // myDetail2 { name: 'Lakshman kumar', age: 18, course: '
 console.log(detail2.name);  // Lakshman kumar
 console.log(detail2.age);  // 18
 console.log(detail2.course);  // BCA
-console.log(detail2.introduce());  // undefined as function doesn't retun anything but only print which is inside console.
+console.log(detail2.introduce());  // undefined as function doesn't retun anything but only print which is inside console in introduce() method.
 
 console.log(detail2.introduction());  // my name is Lakshman kumar , age 18 and course is BCA
