@@ -44,6 +44,8 @@ setTimeout(function () {
 }, 1000);
 console.log("End");
 /* output:-
+    Start
+    End
     Executing Function 01
     Executing Function 02
     Executing Function 03
