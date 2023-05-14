@@ -17,7 +17,8 @@ function outer(){
     }
     inner();
 }
-outer();
+outer(); /* o/p - I'm outer
+   I'm outer I'm inner */
 //inner();  --> error
 // console.log(outerValue);  --> eeror
 console.log(outer.outerValue);  // undefined
