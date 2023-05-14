@@ -51,7 +51,7 @@ let arr2 = [4,5,6];
 let new_array = arr1.concat(arr2).concat(7,8,9);
 console.log(new_array);  // [  1, 2, 3, 4, 5, 6, 7, 8, 9  ]
 
-// 6. join():- It is used to join the all elements of the array into a string. The elements are separated by special character. if we don't specifired then it is separated by comma.
+// 6. join():- It is used to join the all elements of the array into a string. The elements are separated by special character. if we don't specified then it is separated by comma.
 
 let result1 = name.join();
 console.log(result1);  // Lakshman,Vishal,Prakash,Abhisek,Nitin
