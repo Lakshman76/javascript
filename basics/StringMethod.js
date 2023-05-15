@@ -35,4 +35,17 @@ const name2 = "Lakshman kumar from ranchi jharkhand";
 
 console.log(name.endsWith("man"));         // true
 console.log(name2.indexOf('i'));           // 25
+console.log(name2.endsWith("ranchi"));     // false
 console.log(name2.endsWith("ranchi", 26)); // true
+
+// 5. includes() :- This method is used to find a specified string is present inside another string or not and return true or false as appropriate. it does the case sensitive search.
+const sentence = 'The quick brown fox jumps over the lazy dog.';
+
+console.log(sentence.includes("Dog")); // false 
+console.log(sentence.includes("dog")); // true
+
+// 6. repeat() :- it repeats the string as specified number.
+
+const hello = " Hello!";
+
+console.log(hello.repeat(3),"Everyone"); // Hello! Hello! Hello! Everyone
