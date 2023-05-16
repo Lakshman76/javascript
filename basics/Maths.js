@@ -33,3 +33,18 @@ console.log(Math.max(3,4,5,8,10,1)); // 10
 // min() method :- It gives minimum value of given values.
 
 console.log(Math.min(3,4,5,8,10,1)); // 1
+
+// random() method :- It returns number between 0 and 1.
+
+console.log(Math.random()); // 0 to 1
+
+/* +++++++++++++ Problem statement +++++++++++++ */
+
+// 1. i want random number between 1 t0 10
+
+console.log(Math.floor((Math.random()*10)+1)); // adding 1 if random no. is something like this 0.0121522 .
+
+// 2.  i Want random number between a given range.
+const min = 10, max = 100;
+
+console.log(Math.floor((Math.random())*(max-min+1))+min);
