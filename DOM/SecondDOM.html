@@ -13,6 +13,7 @@
     </div>
 </body>
 <script>
+    // Add Element
     function addLang(lang){
         const li = document.createElement('li');
         li.innerHTML = `${lang}`;
@@ -29,6 +30,7 @@
     addLangOpt("C++");
 
     // Edit
+
     const secondLang = document.querySelector('li:nth-child(2)');
     const newLi = document.createElement('li');
     newLi.textContent = 'Mojo';
@@ -38,6 +40,7 @@
     console.log(firstLang);
     firstLang.outerHTML = '<li>TypeScript</li>';
 
+    // Delete
     const lastLang = document.querySelector("li:last-child");
     lastLang.remove();
 </script>
