@@ -1,5 +1,7 @@
 const mySymbol = Symbol("myKey");
 
+console.log(typeof(mySymbol)); // symbol
+
 const mySymbol_2 = Symbol("myKey");
 
 // object literals
@@ -17,7 +19,7 @@ const myObj = {
 
 console.log(myObj.name);  // Lakshman
 // console.log(myObj.full name);  --> error can't access like this
-console.log(myObj["full name"]);  // akshman kumar
+console.log(myObj["full name"]);  // Lakshman kumar
 
 // Best practice to use square bracket.
 
@@ -32,7 +34,7 @@ console.log(typeof myObj[mySymbol]);// string
 
 console.log(typeof [mySymbol]); // object
 
-console.log(typeof mySymbol); // symbol
+console.log(typeof mySymbol_2); // symbol
 
 // +++++++++++++++++++++++++++++++
 
@@ -40,9 +42,9 @@ myObj.greeting = function(){
     console.log("Hello JS user");
 }
 console.log(myObj.greeting); // [Function (anonymous)]
-console.log(myObj.greeting()); // o/p - when function (Hello JS user)  &   undefined
+console.log(myObj.greeting()); // o/p - when call function --> (Hello JS user)  &   undefined
 
 myObj.greetingTwo = function(){
-    console.log(`Hello JS user, ${this.name}`);
+    console.log(`Hello JS user, ${this.name}`); // Hello JS user, Lakshman
 }
-console.log(myObj.greetingTwo());
+console.log(myObj.greetingTwo()); // undefined
