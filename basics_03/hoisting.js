@@ -27,3 +27,17 @@ let b2;
 // console.log(c); // ReferenceError
 const c = 7;
 
+
+/****************** Function Hoisting ************************/
+
+greet1(); // Hi, there.
+function greet1() {
+    console.log('Hi, there.');
+}
+
+// function expression
+
+// greet2(); // ReferenceError: Cannot access 'greet2' before initialization
+let greet2 = function() {
+    console.log('Hi, there.');
+}
